@@ -1,4 +1,4 @@
-# Emergency Brake System with Potentiometer Speed Control
+# Emergency Brake System on obstacle and edge detection
 
 A project implementing an emergency brake system for an autonomous vehicle, integrating obstacle/hole detection and dynamic speed control.
 
