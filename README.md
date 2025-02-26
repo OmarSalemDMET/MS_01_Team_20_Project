@@ -3,7 +3,7 @@
 A project implementing an emergency brake system for an autonomous vehicle, integrating obstacle/hole detection and dynamic speed control.
 
 ## Description
-This system uses an **ultrasonic sensor** to detect obstacles and an **IR sensor** to detect holes/drop-offs. A **potentiometer** adjusts the vehicle's speed dynamically. Upon hazard detection, the vehicle stops and triggers visual (LEDs) and audible (buzzer) alerts. Built with a Raspberry Pi Pico microcontroller.
+This system uses an **ultrasonic sensor** to detect obstacles and an **IR sensor** to detect holes/drop-offs. Upon hazard detection, the vehicle stops and triggers visual (LEDs) and audible (buzzer) alerts. Built with a Raspberry Pi Pico microcontroller.
 
 ## Features
 - Obstacle detection (HC-SR04 ultrasonic sensor).
@@ -28,13 +28,11 @@ This system uses an **ultrasonic sensor** to detect obstacles and an **IR sensor
   - `ECHO_PIN` → GPIO 3  
 - **IR Sensor**:  
   - `IR_SENSOR_PIN` → GPIO 6 (enable pull-up/down resistor if needed).  
-- **Potentiometer**:  
-  - Middle pin → ADC0 (GPIO 26).  
 - **Motor Driver (L298N)**:  
   - Motor 1: PWM pin 0, DIR pins 12 & 13.  
-  - Motor 2: PWM pin 1, DIR pins 10 & 11.  
+  - Motor 2: PWM pin 1, DIR pins 14 & 15.  
 - **Buzzer**: GPIO 8.  
-- **LEDs**: GPIO 9 (LED1), GPIO 14 (LED2).  
+- **LEDs**: GPIO 9 (LED1), GPIO 10 (LED2).  
 
 ### Software Dependencies
 - Raspberry Pi Pico SDK.
